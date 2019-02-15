@@ -1049,3 +1049,14 @@ footer section ul li a{
 	font-weight: 300;
 	color: white !important;
 }
+@media(max-width:600px){
+	footer section{
+		text-align: center;
+	}
+	footer section ul {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: center;
+	}
+}
