@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>honolulu luaus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+  </head>
+  <body>
+    <!-- ================================ -->
+
+    <div class="masthead">
+      <section>
+        <a href="#" class="logo">
+          <h1>honolulu<br/>luaus<span>.com</span></h1>
+        </a>
+        <a href="#" class="cart-link">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+        <button type="button" class="menu-btn" name="button" id="menu-btn" onclick="idToggle('main-nav','active')">
+          <hr class="menu-btn-hr-1"/>
+          <hr class="menu-btn-hr-2"/>
+          <hr class="menu-btn-hr-3"/>
+        </button>
+      </section>
+      <nav class="main-nav" id="main-nav">
+        <a href="#">luaus</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="#">cart</a>
+      </nav>
+      <nav class="phone">
+        <ul>
+          <li><a href="#" onclick="tel:+1-866-482-9775"><span>toll free</span> 1-866-482-9775</a></li>
+          <li><a href="#" onclick="tel:808-892-2082"><span>local</span> 808-892-2082</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ================================ -->
+    <div class="checkpoint-first">
+      <div class="banner">
+        <section id="banner-1" class="banner-section">
+          <aside>
+            <p>pictured:</p>
+            <p><span>waikiki<br/>starlight</p>
+            <a href="#">book now</a>
+          </aside>
+        </section>
+        <section id="banner-2" class="banner-section">
+          <aside>
+            <p>pictured:</p>
+            <p><span>germaine's luau</p>
+            <a href="#">book now</a>
+          </aside>
+        </section>
+        <section id="banner-3" class="banner-section">
+          <aside>
+            <p>pictured:</p>
+            <p><span>chief's luau</p>
+            <a href="#">book now</a>
+          </aside>
+        </section>
+        <header>
+          <h2><span>best price guarantee</span><br/>discount oahu luaus</h2>
+          <button id="explore-btn" onclick="scrollDown('product-section',0)" type="button" name="button">explore<i class="material-icons">expand_more</i></button>
+        </header>
+        <nav class="banner-nav">
+          <button id="banner-prev" onclick="sliderCurrent(-1);endTimer()" type="button" name="button"><i class="material-icons">chevron_left</i></button>
+          <button type="button" onclick="sliderCurrent(1);endTimer()" name="button" class="button-current"><i class="material-icons">radio_button_unchecked</i></button>
+          <button type="button" onclick="sliderCurrent(2);endTimer()" name="button" class="button-current"><i class="material-icons">radio_button_unchecked</i></button>
+          <button type="button" onclick="sliderCurrent(3);endTimer()" name="button" class="button-current"><i class="material-icons">radio_button_unchecked</i></button>
+          <button id="banner-next" onclick="sliderPlus(1);endTimer()" type="button" name="button"><i class="material-icons">chevron_right</i></button>
+        </nav>
+      </div>
+    </div>
+    <!-- ============================== -->
+
+
+<div class="checkpoint">
+<div class="product-section">
+      <header>
+        choose a luau<span>or learn more below</span>
+      </header>
+    <div class="product-nav">
+<!-- =============  ==========  =========== -->
+      <!-- <div class="product-bloc">
+        <div class="product" id="product-1">
+          <section>
+            <header></header>
+            <h2>chief's luau</h2><h3>the best luau in hawaii</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+            </ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+        <div class="product" id="product-2">
+          <section>
+            <header></header>
+            <h2>aha'aina luau</h2><h3>Waikiki’s only oceanfront dinner show</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+            </ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+        <div class="product" id="product-3">
+          <section>
+            <header></header>
+            <h2>germaine's luau</h2><h3>hawaii's original backyard barbecue</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li></ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+      </div> -->
+        <!-- ============================== -->
+      <!-- <div class="product-bloc">
+        <div class="product" id="product-4">
+          <section>
+            <header></header>
+            <h2>daimond head luau</h2>
+            <h3>hawaii's only farm to table luau</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li></ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+        <div class="product" id="product-5">
+          <section>
+            <header></header><h2>polynesian cultural center</h2><h3>oahu's most authentic luau</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+            </ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+        <div class="product" id="product-6">
+          <section>
+            <header></header><h2>waikiki starlight luau</h2><h3>oahu's best outdoor luau</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+            </ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+      </div> -->
+      <!-- ============================== -->
+      <!-- <div class="product-bloc">
+        <div class="product" id="product-7">
+          <section>
+            <header></header>
+            <h2>toa luau</h2>
+            <h3>5 star trip advisor reviewed</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+            </ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+        <div class="product" id="product-8">
+          <section>
+            <header></header>
+            <h2>ka moana luau</h2><h3>includes sealife park admission</h3>
+            <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+            </ul>
+            <a href="#">book now</a>
+          </section>
+        </div>
+          <div class="product">
+
+          </div>
+      </div> -->
+      <!-- ======= end ===== -->
+      <!-- =============  ==========  =========== -->
+            <div class="product-bloc">
+              <div class="product" id="product-1">
+                <section>
+                  <header></header>
+                  <h2>chief's luau</h2><h3>the best luau in hawaii</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+                  </ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+              <div class="product" id="product-2">
+                <section>
+                  <header></header>
+                  <h2>aha'aina luau</h2><h3>Waikiki’s only oceanfront dinner show</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+                  </ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+            </div>
+              <!-- ============================== -->
+            <div class="product-bloc">
+              <div class="product" id="product-3">
+                <section>
+                  <header></header>
+                  <h2>germaine's luau</h2><h3>hawaii's original backyard barbecue</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li></ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+              <div class="product" id="product-4">
+                <section>
+                  <header></header>
+                  <h2>daimond head luau</h2>
+                  <h3>hawaii's only farm to table luau</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li></ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+            </div>
+            <!-- ============================== -->
+            <div class="product-bloc">
+              <div class="product" id="product-5">
+                <section>
+                  <header></header><h2>polynesian cultural center</h2><h3>oahu's most authentic luau</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+                  </ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+              <div class="product" id="product-6">
+                <section>
+                  <header></header><h2>waikiki starlight luau</h2><h3>oahu's best outdoor luau</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+                  </ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+            </div>
+            <!-- ============================== -->
+            <div class="product-bloc">
+              <div class="product" id="product-7">
+                <section>
+                  <header></header>
+                  <h2>toa luau</h2>
+                  <h3>5 star trip advisor reviewed</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+                  </ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+              <div class="product" id="product-8">
+                <section>
+                  <header></header>
+                  <h2>ka moana luau</h2><h3>includes sealife park admission</h3>
+                  <ul><li><p>$000.00</p></li><li><b>$000.00</b></li>
+                  </ul>
+                  <a href="#">book now</a>
+                </section>
+              </div>
+                <div class="product">
+
+                </div>
+            </div>
+            <!-- ======= end ===== -->
+    </div>
+    <!-- ============================== -->
+    <nav class="scroll-nav">
+      <button id="prev-button" type="button" name="button"><i class="material-icons">chevron_left</i></button>
+      <p class="scroll-span">1 / 3</p>
+      <button id="next-button" type="button" name="button"><i class="material-icons">chevron_right</i></button>
+    </nav>
+  </div>
+</div>
+    <!-- ======== -->
+<div class="checkpoint">
+  <div class="disc-wrapper">
+    <h2>discover oahu luaus</h3>
+    <h3>click a luau below to learn more</h3>
+    <div class="disc-cont">
+      <div class="disc-bloc">
+        <section id="disc-1">
+          <header></header>
+          <b>chief's luau</b>
+          <p>at wet 'n' wild hawaii</p>
+          <button type="button" name="button">learn more</button>
+        </section>
+        <section id="disc-2">
+          <header></header>
+          <b>germaine's luau</b>
+          <p><span>_</span></p>
+          <button type="button" name="button">learn more</button>
+        </section>
+        <section id="disc-3">
+          <header></header>
+          <b>Aha'aina Luau</b>
+          <p>The Royal Hawaiian</p>
+          <button type="button" name="button">learn more</button>
+        </section>
+        <section id="disc-4">
+          <header></header>
+          <b>diamond head luau</b>
+          <p><span>_</span></p>
+          <button type="button" name="button">learn more</button>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======== -->
+<div class="checkpoint">
+  <div class="disc-wrapper">
+    <div class="disc-cont">
+      <div class="disc-bloc">
+        <section id="disc-5">
+          <header></header>
+          <b>polynesian cultural center</b>
+          <p>all day packages</p>
+          <button type="button" name="button">learn more</button>
+        </section>
+        <section id="disc-6">
+          <header></header>
+          <b>Waikiki Starlight Luau</b>
+          <p>hilton hawaiian village</p>
+          <button type="button" name="button">learn more</button>
+        </section>
+        <section id="disc-7">
+          <header></header>
+          <b>toa luau</b>
+          <p>waimea valley</p>
+          <button type="button" name="button">learn more</button>
+        </section>
+        <section id="disc-8">
+          <header></header>
+          <b>ka moana luau</b>
+          <p>sealife park</p>
+          <button type="button" name="button">learn more</button>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======== -->
+<div class="checkpoint">
+  <div class="article-cont" id="article1">
+    <div class="article-img" >
+      <section></section>
+    </div>
+    <section class="article-section">
+      <article>
+        <header>tentative article goes here</header>
+        <p>either a lot of text will go here, or very litte.</p>
+      </article>
+    </section>
+  </div>
+</div>
+<div class="checkpoint">
+  <div class="article-cont" id="article2">
+    <section class="article-section">
+      <article>
+        <header>tentative article goes here</header>
+        <p>either a lot of text will go here, or very litte.</p>
+      </article>
+    </section>
+    <div class="article-img">
+      <section></section>
+    </div>
+  </div>
+</div>
+<!-- ======== -->
+<footer>
+  <header>
+    <img src="images/logo.png" alt="">
+  </header>
+  <section>
+    <ul>
+      <li><b>luaus</b></li>
+      <li> <a href="#">chief's luau</a> </li>
+      <li> <a href="#">germaine's luau</a> </li>
+      <li> <a href="#">royal hawaiian luau</a> </li>
+      <li> <a href="#">diamondhead luau</a> </li>
+      <li> <a href="#">polyneisan cultural center</a> </li>
+      <li> <a href="#">waikiki starlight luau</a> </li>
+      <li> <a href="#">toa luau</a> </li>
+      <li> <a href="#">ka moana luau</a> </li>
+    </ul>
+    <ul>
+      <li><b>navigation</b></li>
+      <li> <a href="#">home</a> </li>
+      <li> <a href="#">contact</a> </li>
+      <li> <a href="#">about us</a> </li>
+      <li> <a href="#">cart</a> </li>
+    </ul>
+    <ul>
+      <li><b>site info</b></li>
+      <li> <a href="#">faq</a> </li>
+      <li> <a href="#">site map</a> </li>
+      <li> <a href="#">privacy policy</a> </li>
+      <li> <a href="#">terms</a> </li>
+      <li> <a href="#">login</a> </li>
+    </ul>
+  </section>
+</footer>
+<!-- ======== -->
+    <script type="text/javascript" src="checkpoint.js"></script>
+    <script type="text/javascript" src="gallery.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
