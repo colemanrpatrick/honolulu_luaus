@@ -7,17 +7,17 @@ function menuEvent(){
 }
 menuBtn.addEventListener("click",menuEvent,false);
 /*============*/
-// $(document).ready(function() {
-//   $(this).scrollTop(0);
-// })
+$(document).ready(function() {
+  $(this).scrollTop(0);
+})
 /*============*/
-// var timer = function Timer(){
-//   sliderPlus(1);
-// }
-// var beginTimer = setInterval(timer,4000);
-// function endTimer(){
-//   clearInterval(beginTimer);
-// }
+var timer = function Timer(){
+  sliderPlus(1);
+}
+var beginTimer = setInterval(timer,4000);
+function endTimer(){
+  clearInterval(beginTimer);
+}
 /*============*/
 function scrollDown(element,num){
   $('html,body').animate({
